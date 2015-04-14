@@ -1,4 +1,5 @@
-**Physical Layer**
+Physical Layer
+--------------
 
 control.py
 ```python
@@ -102,7 +103,8 @@ class Page(object):
         return WebDriverWait(self.browser, maxtimeout).until(EC.presence_of_element_located(locator))
 ```
 
-**Logical Layer**
+Logical Layer
+-------------
 
 app.py - To represent the whole applicaton, which will be responsible for starting the browser app
 ```python
