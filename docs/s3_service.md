@@ -9,7 +9,7 @@ import eventlet
 eventlet.patcher.monkey_patch(all=False, socket=True)
 
 from boto import s3
-from .filelib import FileChunkIO
+from filechunkio import FileChunkIO
 
 log = logging.getLogger(__name__)
 
