@@ -10,17 +10,21 @@ The Practice of Programming
 
 C++
 ---
+The Design and Evolution of C++
+
 The C++ Programming Language
 
 (More) Effective C++
 
+Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14
+
+Inside the C++ Object Model
 
 
 Python
 ------
 >Python In Practice
 >Python Cookbook
-
 
 >Fluent Python
 
@@ -47,11 +51,16 @@ Computer Network
 ================
 Computer Network - A Top-Down Approach
 
-Web Server
-----------
+
+Web Server/Framework
+--------------------
 Nginx
 
 Tornado
+
+Flask
+
+Django
 
 
 Algorithm
@@ -73,3 +82,5 @@ Database
 MySQL
 
 MongoDB
+
+Redis
