@@ -18,13 +18,15 @@ The C++ Programming Language
 
 Python
 ------
-Python In Practice
+>Python In Practice
+>Python Cookbook
 
-Python Cookbook
 
-Python Essential Reference
+>Fluent Python
 
 The Hacker Guide To Python
+
+Python Essential Reference
 
 The Python Standard Library By Example
 
