@@ -23,6 +23,8 @@ Inside the C++ Object Model
 
 Python
 ------
+Python is powerful and fast...
+
 >Python In Practice
 >Python Cookbook
 
@@ -51,6 +53,8 @@ Computer Network
 ================
 Computer Network - A Top-Down Approach
 
+Computer Network - Andrew S.TANENBAUM
+
 
 Web Server/Framework
 ====================
@@ -76,21 +80,26 @@ Big Data
 ========
 RabbitMQ
 --------
+[RabbitMQ](https://www.rabbitmq.com) is a messaging broker. It gives your application a common platform to send and receive messages.
 
 Apache Kafka
 ------------
+[Kafka](http://kafka.apache.org/) is a distributed, partitioned, replicated commit log service. It provides functionality of a messaging system, but with a different desgin.
 
 Apache Storm
 ------------
-
+[Apache Storm](http://storm.apache.org/) is a open source distributed realtime computation system.
 
 Database
 ========
 MySQL
 -----
+The world's most popular open source database
 
 MongoDB
 -------
+[MongoDB](https://docs.mongodb.org/manual/) is an open source, document database designed for ease of development and scaling.
 
 Redis
 -----
+[Redis](http://redis.io/) is an open source, in-memory data structure store, used as database, cache and message borker.
