@@ -25,6 +25,7 @@ Python
 ------
 Python is powerful and fast...
 
+
 >Python In Practice
 >Python Cookbook
 
@@ -78,6 +79,10 @@ Django
 Algorithm
 =========
 Introduction to Algorithm
+
+The Design and Analysis of Computer Algorithms
+
+Programming Pearls
 
 
 Big Data
