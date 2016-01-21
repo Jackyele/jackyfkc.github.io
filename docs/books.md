@@ -60,15 +60,19 @@ Web Server/Framework
 ====================
 Nginx
 -----
+[Nginx](http://nginx.org/en/) is an HTTP and reverse proxy server, a mail box server, and a generic TCP proxy server, originally written by Igor Sysoev.
 
 Tornado
 -------
+[Tornado](http://www.tornadoweb.org/) is a Python web framework, and asynchronous networking library.
 
 Flask
 -----
+[Flask](http://flask.pocoo.org/) is a micro web framework for Python based on Werkzeug, Jinja 2 and good intentions.
 
 Django
 ------
+[Django](https://www.djangoproject.com/) is a high-level Python web framework that encourage rapid development and clean, pragmatic design.
 
 
 Algorithm
