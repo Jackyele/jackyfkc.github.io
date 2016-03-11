@@ -5,12 +5,16 @@ control.py
 ```python
 import functools
 
+from selenium.webdriver.support.ui import Select as SSelect
+
+
 class Control(object):
-    '''
+    """
     To represent an HTML element
-    '''
+    """
     def __init__(self, htmltag):
         self.tag = htmltag
+
 
 class Link(Control):
     def __init__(self, htmltag):
@@ -18,6 +22,7 @@ class Link(Control):
 
     def click(self):
         self.tag.click()
+
 
 class Edit(Control):
     def __init__(self, htmltag):
@@ -30,7 +35,9 @@ class Edit(Control):
 
     @value.setter
     def value(self, value):
+        self.tag.clear()
         self.tag.send_keys(value)
+
 
 class Button(Control):
     def __init__(self, htmltag):
@@ -40,7 +47,20 @@ class Button(Control):
         self.tag.click()
 
 
-# The following decorators make the writting simple
+class Select(Control):
+    def __init__(self, htmltag):
+        self.tag = SSelect(htmltag)
+
+    @property
+    def value(self):
+        raise NotImplementedError()
+
+    @value.setter
+    def value(self, text):
+        self.tag.select_by_visible_text(text)
+
+
+# The following decorators make the writing simple
 def edit(sig):
     def inner(func):
         @functools.wraps(func)
@@ -49,6 +69,7 @@ def edit(sig):
             return Edit(tag)
         return property(wrapper)
     return inner
+
 
 def button(sig):
     def inner(func):
@@ -59,12 +80,23 @@ def button(sig):
         return property(wrapper)
     return inner
 
+
 def link(sig):
     def inner(func):
         @functools.wraps(func)
         def wrapper(self, *args, **kwargs):
             tag = self.get_element(sig)
             return Link(tag)
+        return property(wrapper)
+    return inner
+
+
+def select(sig):
+    def inner(func):
+        @functools.wraps(func)
+        def wrapper(self, *args, **kwargs):
+            tag = self.get_element(sig)
+            return Select(tag)
         return property(wrapper)
     return inner
 ```
