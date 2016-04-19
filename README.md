@@ -1,2 +1,2 @@
 # jackyfkc.github.io
-To my dear wife, Candice Fang and my lovely son, tudou! I love you :-)
+This project is for my dear wife, Candice and my little boy; I love you :-)
